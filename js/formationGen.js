@@ -6,14 +6,14 @@ class FormationGen {
 
   drawPositionDiv(arr){
     let mainDiv = document.createElement("div"); 
-    mainDiv.className = "posOuterDiv";
+    mainDiv.className = "pos-outer-div";
     for (let i = 0; i < arr.length; i++) {
       
       let newPlayer = document.createElement('div');
       newPlayer.className = "player";
 
       let newPlayerNum = document.createElement('div');
-      newPlayerNum.className = "playerNum";
+      newPlayerNum.className = "player-num";
       newPlayerNum.innerHTML = arr[i].formation_place;
       newPlayer.appendChild(newPlayerNum);
       mainDiv.appendChild(newPlayer);
